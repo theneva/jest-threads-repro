@@ -1,7 +1,7 @@
 const { expose } = require('threads/worker');
 const mime = require('mime');
 
-function work() {
+async function work() {
     return mime.getType('json')
 }
 
