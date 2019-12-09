@@ -1,8 +1,8 @@
 const { expose } = require('threads/worker');
-const twoString = require('two-string');
+const tempy = require('tempy');
 
 function work() {
-    return twoString();
+    return tempy.file();
 }
 
 expose(work);
