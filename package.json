@@ -8,6 +8,7 @@
     "jest": "^24.9.0"
   },
   "dependencies": {
+    "mime": "^2.4.4",
     "tempy": "^0.3.0",
     "threads": "^1.0.0-beta.8"
   }

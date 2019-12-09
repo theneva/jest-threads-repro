@@ -1,8 +1,8 @@
 const { expose } = require('threads/worker');
-const tempy = require('tempy');
+const mime = require('mime');
 
 function work() {
-    return tempy.file();
+    return mime.getType('json')
 }
 
 expose(work);
