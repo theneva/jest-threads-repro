@@ -1,4 +1,8 @@
-const { parentPort } = require('worker_threads');
+const { expose } = require('threads/worker');
 const twoString = require('two-string');
 
-parentPort.postMessage(twoString());
+function work() {
+    return twoString();
+}
+
+expose(work);
